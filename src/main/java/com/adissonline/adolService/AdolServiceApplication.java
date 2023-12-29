@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AdolServiceApplication {
 
 	public static void main(String[] args) {
+
+
 		SpringApplication.run(AdolServiceApplication.class, args);
 	}
 
