@@ -3,7 +3,7 @@ COPY . .
 RUN mvn clean package -DskipTest
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/adolService-0.0.1-SNAPSHOT.jar adol.jar
+COPY --from=build /target/adolService-0.0.1-SNAPSHOT.jar adolService.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","adolService.jar"]
 
